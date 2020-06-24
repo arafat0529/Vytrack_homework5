@@ -21,13 +21,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-/**
- * Test Case #1 1.Go to “https://qa1.vytrack.com/"
- * 2.Login as a store manager
- * 3.Navigate to “Activities -> Calendar Events”
- * 4.Hover on three dots “...” for “Testers meeting” calendar event
- * 5.Verify that “view”, “edit” and “delete” options are available
- */
+
 
 
 
@@ -58,6 +52,7 @@ public class TestCase1_12 extends AbstractTestBase {
         calendarEventsPage.navigateTo("Activities", "Calendar Events");
         BrowserUtils.waitForPageToLoad(10);
         BrowserUtils.wait(2);
+
         driver.findElement(By.cssSelector("[title='Grid Settings']")).click();
         BrowserUtils.wait(2);
         List<WebElement> names = driver.findElements(By.xpath("//tbody[@class='ui-sortable']//tr"));
@@ -77,6 +72,7 @@ public class TestCase1_12 extends AbstractTestBase {
         calendarEventsPage.navigateTo("Activities", "Calendar Events");
         BrowserUtils.waitForPageToLoad(10);
         BrowserUtils.wait(2);
+
         calendarEventsPage.clickToCreateCalendarEvent();
         BrowserUtils.wait(2);
         WebElement button = driver.findElement(By.className("caret"));

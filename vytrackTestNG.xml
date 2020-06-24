@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test suite">
+    <test name="Calendar events">
+        <classes>
+            <class name="com.automation.tests.TestCase1_12"/>
+        </classes>
+    </test>
+</suite>
